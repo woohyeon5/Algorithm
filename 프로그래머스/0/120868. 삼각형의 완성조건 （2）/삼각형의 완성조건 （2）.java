@@ -10,7 +10,6 @@ class Solution {
         //answer>Math.abs(sides[0]-sides[1]);
         //answer<sides[0]+sides[1];
 
-
         answer = sides[0]+sides[1]-Math.abs(sides[0]-sides[1])-1;
         return answer;
 
