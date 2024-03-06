@@ -6,14 +6,15 @@ class Solution {
                 ".--","-..-","-.--","--.."};
         String[] morseString;
         morseString = letter.split(" ");
+        String answer= ""; 
 
         StringBuilder sb = new StringBuilder();
         
         for (String word : morseString) {
             for (int i = 0; i < morse.length; i++) {
-                if (word.equals(morse[i])) sb.append(Character.toString(i + 'a'));
+                if (word.equals(morse[i])) answer += (char) ('a' + i);
             }
         }
-        return sb.toString();
+        return answer;
     }
 }
