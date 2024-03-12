@@ -14,17 +14,8 @@ class Solution {
         for (int i=0; i < list.size(); i ++){
             str+=list.get(i);
         }
-        answer = Long.parseLong(str);
-        
-
-        
-        
-        
-        
-        
+        answer = Long.parseLong(str); 
         System.out.println(str);
-        
-        System.out.println(Arrays.toString(intArr));
         return answer;
     }
 }
