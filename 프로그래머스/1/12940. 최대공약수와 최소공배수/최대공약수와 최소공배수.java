@@ -3,9 +3,9 @@ class Solution {
         int max = Math.max(n, m);
         int min = Math.min(n, m);
         while (min != 0) {
-            int r = max % min;
+            int num = max % min;
             max = min;
-            min = r;
+            min = num;
         }
 
         return new int[] { max, n * m / max };
